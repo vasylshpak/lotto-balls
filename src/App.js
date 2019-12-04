@@ -7,6 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Lottery />
+        <Lottery title='mini daily' maxNum={10} maxBalls={4} />
       </div>
     );
   }
