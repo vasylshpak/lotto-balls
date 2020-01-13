@@ -1,2 +1,2 @@
-[lotto balls app]
+[ lotto balls app ]
 https://vasylshpak.github.io/lotto-balls/
