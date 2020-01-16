@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Ball from './Ball'
-
 class Lottery extends Component {
-
   static defaultProps = {
     title: 'Lotto',
     maxBalls: 6,
@@ -14,7 +12,7 @@ class Lottery extends Component {
     this.handleClick = this.handleClick.bind(this)
   }
   generate() {
-    //get random number beetwen min max
+    //get random beetwen min max
     this.setState(curState => ({
       nums: curState.nums.map(n => Math.floor(Math.random() * this.props.maxNum) + 1)
     }))
@@ -23,7 +21,6 @@ class Lottery extends Component {
   handleClick() {
     this.generate();
   }
-
 
   render() {
     return (
@@ -37,6 +34,5 @@ class Lottery extends Component {
     )
   }
 }
-
 
 export default Lottery;
